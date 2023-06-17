@@ -44,13 +44,13 @@
             <tbody>
             <% datos.forEach((elements)=>{ %>
               <tr>
-                <td><%= elements.ID %></td>
-                <td><%= elements.NAME %></td>
+                <td><%= elements.id %></td>
+                <td><%= elements.name %></td>
                 <td>
-                  <a href="edit-user?id=<%= elements.ID %>&name=<%= elements.NAME %>" class="btn btn-warning">
+                  <a href="edit-user?id=<%= elements.id %>&name=<%= elements.name %>" class="btn btn-warning">
                     <i class="fa fa-edit"></i>
                   </a>
-                  <a class="btn btn-danger" onclick="confirmar(`<%= elements.ID %>`);">
+                  <a class="btn btn-danger" onclick="confirmar(`<%= elements.id %>`);">
                     <!-- href="borrar?id=<%= elements.ID %>" -->
                     <i class="fa fa-trash"></i>
                   </a>
