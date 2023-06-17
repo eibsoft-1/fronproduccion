@@ -43,7 +43,7 @@ dash.get("/usuario", async (req, res)=>{
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                    datos = data[0];
+                    datos = data;
                 })
                 .catch(err => console.error("Error en peticion: " + err))
 
