@@ -1,0 +1,18 @@
+<div class="col-md-9 col-sm-9">
+    <div class="navbar-area">
+       <nav class="site-navbar">
+          <ul>
+            <!-- <%= activo==1 ? 'class="Active"':'' %> -->
+             <li><a href="./" class= <%= activo==1 ? "active":'' %>> Home</a></li>
+             <li><a href="./about" class= <%= activo==2 ? "active":'' %>>About</a></li>
+             <li><a href="./service" class= <%= activo==3 ? "active":'' %>>Service</a></li>
+             <li><a href="./blog" class= <%= activo==4 ? "active":'' %>>Blog</a></li>
+             <li><a href="./contact" class= <%= activo==5 ? "active":'' %>>Contact us</a></li>
+             <li class="d_none"><a href="./auth/google"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+          </ul>
+          <button class="nav-toggler">
+          <span></span>
+          </button>
+       </nav>
+    </div>
+ </div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include("./partials/head.ejs", {'titulo':'Acerca de ...'}); %>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <div class="full_bg">
+         <!-- header -->
+         <header class="header-area">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class=" col-md-3 col-sm-3">
+                     <div class="logo">
+                        <a href="index.html">Bliss</a>
+                     </div>
+                  </div>
+                  <%- include("./partials/menu.ejs", {'activo' : 2}); %>
+               </div>
+            </div>
+         </header>
+         <!-- end header inner -->
+      </div>
+      <!-- end banner -->
+      <!-- about -->
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex grig">
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img src="images/about_img.jpg" alt="#"/>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-md-6 order">
+                  <div class="titlepage text_align_left">
+                     <h2>About Our Center</h2>
+                     <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                     <a class="read_more" href="about.html">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!--  footer -->
+      <%- include("./partials/footer.ejs"); %>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include("./partials/head.ejs", {'titulo':'Blog'}); %>
+   <!-- body -->
+   <body class="main-layout inner_page blog_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <div class="full_bg">
+         <!-- header -->
+         <header class="header-area">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class=" col-md-3 col-sm-3">
+                     <div class="logo">
+                        <a href="index.html">Bliss</a>
+                     </div>
+                  </div>
+                  <%- include("./partials/menu.ejs", {'activo' : 4}); %>
+               </div>
+            </div>
+         </header>
+         <!-- end header inner -->
+      </div>
+      <!-- blog -->
+      <div class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Latest Blog</h2>
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest">
+                     <figure><img src="images/blog1.jpg" alt="#"/></figure>
+                     <span>16 March</span>
+                     <div class="nostrud">
+                        <h3>Quis Nostrud </h3>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <a class="read_more" href="blog.html">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest">
+                     <figure><img src="images/blog2.jpg" alt="#"/></figure>
+                     <span class="yellow">17 March</span>
+                     <div class="nostrud">
+                        <h3>Veniam, Quis </h3>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <a class="read_more" href="blog.html">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest">
+                     <figure><img src="images/blog3.jpg" alt="#"/></figure>
+                     <span>18 March</span>
+                     <div class="nostrud">
+                        <h3>Tempor incididunt </h3>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <a class="read_more" href="blog.html">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end blog -->
+      <!--  footer -->
+      <%- include("./partials/footer.ejs"); %>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>

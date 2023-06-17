@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include("./partials/head.ejs", {'titulo':'Servicios'}); %>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <div class="full_bg">
+         <!-- header -->
+         <header class="header-area">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class=" col-md-3 col-sm-3">
+                     <div class="logo">
+                        <a href="index.html">Bliss</a>
+                     </div>
+                  </div>
+                  <%- include("./partials/menu.ejs", {'activo' : 3}); %>
+               </div>
+            </div>
+         </header>
+         <!-- end header inner -->
+      </div>
+      <!-- end banner -->
+      <!-- services -->
+      <div class="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Our Massage Services</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div id="ho_shad" class="services_box text_align_left">
+                     <h3>Ayurveda Spa</h3>
+                     <figure><img src="images/service1.jpg" alt="#"/></figure>
+                     <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                     <a class="read_more" href="service.html">Read More</a>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div id="ho_shad" class="services_box text_align_left">
+                     <h3>Massage Spa</h3>
+                     <figure><img src="images/service2.jpg" alt="#"/></figure>
+                     <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                     <a class="read_more" href="service.html">Read More</a>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div id="ho_shad" class="services_box text_align_left">
+                     <h3>Luxury Spa</h3>
+                     <figure><img src="images/service3.jpg" alt="#"/></figure>
+                     <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                     <a class="read_more" href="service.html">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end services -->
+      <!--  footer -->
+      <%- include("./partials/footer.ejs"); %>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
